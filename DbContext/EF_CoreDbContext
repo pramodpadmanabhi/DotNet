@@ -33,7 +33,21 @@ Entity Framework Core DB-Context
               author.name="Pramod";
               _context.SaveChanges()  // generates update Statement
           */
-          
+        
+        -> Disconnected Scenario - Entity properties are done in controller/client
+           /*
+              _context.Entry(author).State = EntityState.Modified;
+              _context.SaveChanges();
+           */   
+         ->DBContext Update updates automatically Changes the ENTITYSTATE to Modified if Primary key is provided, if primary key is absent 
+            it is treated as insert statement and ENTITYSTATE is Added
+            /*
+                _context.Update(author) or _contex.UpdateRange(authors)
+                _context.SaveChanges()
+            /*
+         
+
+         
         
 
 
