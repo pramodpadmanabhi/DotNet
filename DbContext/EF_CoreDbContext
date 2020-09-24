@@ -1,1 +1,15 @@
+Entity Framework Core DB-Context 
 
+* DbContext - Represents a session with a database and provides API For Comunnaticating with database and provides capabilities
+
+  -----------------------------------------
+  
+  * Capabilities
+  
+        1) Database Connections -> Opening and Maintaining Connections to the database
+        2) Database Opertations -> Adding,Modifying,Deleting
+        3) Change Tracking -> Detects change made to an entity and sets the EntityState of on objects.The Type of operation depends on the EntityState Value
+        4) Model Building -> Responsible for setting up Conceptual Model and maps to the Database
+        5) Data Mapping -> Includes Data Mapper Layer,mapping the results of SQL Queries to Entity Instances
+        6) Object Caching -> When the DbContext SaveChanges method is called, a transaction is created and all pending changes are wrapped in it as a single unit of work. If an error occurs when the changes are applied to the database, 
+                            they are rolled back and the database is left in an unmodified condition.
