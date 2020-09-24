@@ -38,15 +38,27 @@ Entity Framework Core DB-Context
            /*
               _context.Entry(author).State = EntityState.Modified;
               _context.SaveChanges();
-           */   
-         ->DBContext Update updates automatically Changes the ENTITYSTATE to Modified if Primary key is provided, if primary key is absent 
+           */ 
+           
+        -> DBContext Update updates automatically Changes the ENTITYSTATE to Modified if Primary key is provided, if primary key is absent 
             it is treated as insert statement and ENTITYSTATE is Added
             /*
                 _context.Update(author) or _contex.UpdateRange(authors)
                 _context.SaveChanges()
             /*
          
-
+         ->DBContext Attach State sets Unchanged State if key value is not present and Added State if if key value is present,with this we can update specific property 
+            so that Database Commands can be generated for that
+              /*
+                    var autor = new Author{
+                      AuthorId=1,
+                      FirstName="Pramod",
+                      LastName="Padmanabhi"
+                    }
+                    _context.Attach(author);
+                    _context.Entry(author).Property("FirstName").IsModified = true;
+                    _context.SaveChanges();
+              */
          
         
 
