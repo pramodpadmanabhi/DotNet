@@ -23,6 +23,18 @@ Entity Framework Core DB-Context
         3) AddRange(IEnumerable<objects> entities)
         4) AddRange(params object[] entities)
         5) AddAsync( args same 3rd or 4th)
+        
+  * Updating Data via DbContext
+  
+        -> Depends on whether the context is currently tracking the entity being modified or not
+        -> The below Examples does not need _context.update() as author entity is already being tracked by EF_Core and changes the ENTITYSTATE to MODIFIED
+          /*
+              var author=_context.Authors.Find(author=>author.ID==ID);
+              author.name="Pramod";
+              _context.SaveChanges()  // generates update Statement
+          */
+          
+        
 
 
   
