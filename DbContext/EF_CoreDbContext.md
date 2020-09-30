@@ -59,6 +59,16 @@ Entity Framework Core DB-Context
                     _context.Entry(author).Property("FirstName").IsModified = true;
                     _context.SaveChanges();
               */
+              
+              
+              
+  # Change Tracker
+    
+  ##### Change Tracker records current state of an entity using Four Values
+  * Added
+  * Unchanged
+  * Modified
+  * Deleted
          
         
 
