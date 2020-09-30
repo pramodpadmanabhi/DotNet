@@ -69,6 +69,16 @@ Entity Framework Core DB-Context
   * Unchanged
   * Modified
   * Deleted
+  
+  ##### EF Core tracks the entity in following cases
+  * Entity is loaded as a result of Query
+  * By Setting State property of Entry
+  * By Below Methods
+    * Add
+    * Update
+    * Remove
+    * Attach
+    
          
         
 
