@@ -24,5 +24,9 @@ https://dotnettutorials.net/lesson/basic-exception-handling-interview-questions-
 * How many ways we can use try catch and finally?
 * What happens if the finally block throws an exception?
 * What is the difference between the “throw” and “throw ex” in .NET?
-* What is Inner Exception?
+* What is Inner Exception?  https://dotnettutorials.net/lesson/inner-exception-csharp/
+* What are the different ways to create custom Exceptions with eg?
+* What is Exception Handling Abuse? https://dotnettutorials.net/lesson/exception-handling-abuse-csharp/
+
+
 
