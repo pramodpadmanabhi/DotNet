@@ -36,6 +36,11 @@ https://dotnettutorials.net/lesson/basic-exception-handling-interview-questions-
   * Difference between ArrayList and List
   * RunTime, SpaceTime Complexities and when to use them?
   * When Removing elements difference between RemoveRange and RemoveAll? 
+ 
+ ### LinkedList<T>
+ * What is LinkedList?
+ * Advantages and Disadvantages over array
+ * When to choose LinkedList?
 
 
 
