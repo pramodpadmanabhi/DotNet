@@ -29,4 +29,13 @@ https://dotnettutorials.net/lesson/basic-exception-handling-interview-questions-
 * What is Exception Handling Abuse? https://dotnettutorials.net/lesson/exception-handling-abuse-csharp/
 
 
+### Collection Questions
+
+#### List<T>
+  * What is List<T> Collection?
+  * Difference between ArrayList and List
+  * RunTime, SpaceTime Complexities and when to use them?
+  * When Removing elements difference between RemoveRange and RemoveAll? 
+
+
 
